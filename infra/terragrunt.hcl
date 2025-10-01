@@ -1,10 +1,10 @@
 remote_state {
   backend = "s3"
   config = {
-    bucket         = "hbd-terra-grunt-dev"
+    bucket         = "hbd-terra-grunt-exercise"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "hbd-dynamo-grunt"
+    dynamodb_table = "hbd-dynamo-grunt-exercise"
     encrypt        = true
   }
 }
