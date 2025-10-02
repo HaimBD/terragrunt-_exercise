@@ -4,6 +4,6 @@ resource "aws_instance" "example" {
 
 
   tags = {
-    Name = "terragrunt-ec2-dev-condition"
+    Name = "terragrunt-ec2-prod-condition"
   }
 }

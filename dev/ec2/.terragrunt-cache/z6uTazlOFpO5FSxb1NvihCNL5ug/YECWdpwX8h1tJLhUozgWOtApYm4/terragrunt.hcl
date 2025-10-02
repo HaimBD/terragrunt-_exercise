@@ -7,8 +7,8 @@ terraform {
 }
 
 locals {
-    environment = "prod"
-    instance_type = local.environment == "prod" ? "t3.medium" : "t3.micro"
+    environment = "dev"
+    instance_type = local.environment == "dev" ? "t3.medium" : "t3.micro"
     }
 
 inputs = {
@@ -16,3 +16,10 @@ inputs = {
   instance_type = local.instance_type
   environment = local.environment
 }
+
+
+
+
+
+
+
