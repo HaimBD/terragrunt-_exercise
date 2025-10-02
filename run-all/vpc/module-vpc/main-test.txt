@@ -1,0 +1,8 @@
+module "aws_vpc" {
+  source = ".\\modules\\aws_vpc"
+
+  vpc_name            = "${var.resource_alias}-vpc"
+  vpc_cidr            = var.vpc_cidr
+  vpc_private_subnets = var.vpc_private_subnets
+
+}
